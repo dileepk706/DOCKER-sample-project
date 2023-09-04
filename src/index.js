@@ -11,7 +11,7 @@ app.use(express.static(__dirname + '/static'));
 
 app.get('/items', getItems);
 app.post('/items', addItem);
-app.put('/items/:id', updateItem);
+app.put('/items/:id', updateItem); 
 app.delete('/items/:id', deleteItem);
 
 db.init().then(() => {
